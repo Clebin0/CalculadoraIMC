@@ -1,37 +1,43 @@
+<div align="center">
 
-# 🧮 Calculadora de IMC (Índice de Massa Corporal)
+# Calculadora de IMC
 
-Projeto simples em **C# (.NET Console App)** que calcula o IMC de uma pessoa a partir do seu peso e altura em centímetros, e classifica o resultado com base nas categorias da OMS.
+**C# · .NET · Orientação a Objetos**
 
----
+<img src="https://img.shields.io/badge/C%23-000000?style=for-the-badge&logo=dotnet&logoColor=white" alt="C#" />
+<img src="https://img.shields.io/badge/.NET-000000?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
 
-## 📌 Funcionalidades
-
-- Entrada de dados: nome, peso (kg) e altura (cm)
-- Conversão de altura de centímetros para metros
-- Cálculo do IMC: `IMC = peso / (altura * altura)`
-- Classificação do IMC:
-  - Abaixo do peso
-  - Peso normal
-  - Sobrepeso
-  - Obesidade grau 1, 2 ou 3
-
-
-## 🛠️ Tecnologias
-
-- C# 10
-- .NET 6 ou superior
-- Console Application
-- Programação Orientada a Objetos (POO)
+</div>
 
 ---
 
-## 📄 Licença
+Projeto de estudo em C#/.NET para praticar orientação a objetos, organização em camadas simples e validação de entrada.
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+## Funcionalidades
+
+- entrada de nome, peso e altura;
+- conversão de centímetros para metros;
+- cálculo do IMC;
+- classificação do resultado;
+- separação entre modelo, serviço e utilitários.
+
+## Estrutura
+
+~~~text
+Models/
+Services/
+Utils/
+Program.cs
+~~~
+
+## Objetivo
+
+Este repositório representa uma etapa de aprendizado em C# e POO. Projetos mais recentes do perfil exploram backend, automação, infraestrutura e Machine Learning em maior profundidade.
 
 ---
 
-## 👨‍💻 Autor
+<div align="center">
 
-Desenvolvido por [Clebin0](https://github.com/Clebin0)
+Projeto de estudo · Cledson Santos
+
+</div>
