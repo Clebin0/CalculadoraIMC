@@ -17,7 +17,7 @@ class Program
         double alturaCm = LerNumeroPositivo("Digite a altura (cm): ");
         double altura = alturaCm / 100d;
 
-        if (alturaCm > 300)
+        if (alturaCm < 30 || alturaCm > 300)
         {
             Console.WriteLine("Altura inválida. Informe a altura em centímetros (ex.: 175).");
             return;
@@ -40,9 +40,12 @@ class Program
             Console.Write(mensagem);
             string entrada = (Console.ReadLine() ?? string.Empty).Trim();
 
-            bool valido =
-                double.TryParse(entrada, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out double valor) ||
-                double.TryParse(entrada.Replace(',', '.'), NumberStyles.Float, CultureInfo.InvariantCulture, out valor);
+            string normalizada = entrada.Replace(',', '.');
+            bool valido = double.TryParse(
+                normalizada,
+                NumberStyles.AllowLeadingSign | NumberStyles.AllowDecimalPoint,
+                CultureInfo.InvariantCulture,
+                out double valor);
 
             if (valido && double.IsFinite(valor) && valor > 0)
                 return valor;
